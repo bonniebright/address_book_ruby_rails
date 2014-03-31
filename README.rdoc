@@ -1,27 +1,12 @@
-== README
+== Wikipages
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Rails-based contact/address book. Stores contacts with email address(es) and phone number(s). As many unique (to the contact) phone numbers and email addresses can be created as the user's heart desires.
 
 Things you may want to cover:
 
-* Ruby version
+* Mailing address not yet created.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+*Our first Ruby on Rails project.
 
 
 Please feel free to use a different markup language if you do not plan to run
