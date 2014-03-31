@@ -1,0 +1,18 @@
+<h1>New email address for <%= @email.contact.name %></h1>
+
+<% if @email.errors.any? %>
+  <h3>Please fix these errors:</h3>
+  <ul>
+    <% @email.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<form action="/contacts/<%= @email.contact.id %>/emails" method="post">
+  <label for="email_email">Email Address</label>
+  <input id="email_email" name="email" type="text" value="<%= @email.email %>">
+  <label for="email_label"> Label </label>
+  <input id="email_label" name="label" type="text" value="<%= @email.label %>">
+  <button>Add email</button>
+</form>

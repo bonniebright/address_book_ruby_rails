@@ -1,0 +1,8 @@
+<h1>Phone number saved!</h1>
+
+<% contact = Contact.find(@phone.contact_id) %>
+<p>Your phone number was successfully saved for <%=contact.name %>.</p>
+
+<p><a href="/contacts/<%= contact.id %>">View <%= contact.name %></a></p>
+
+<p><a href="/contacts">Return to contact listing</a></p>

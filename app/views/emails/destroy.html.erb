@@ -1,0 +1,3 @@
+<h1>Email address deleted</h1>
+<% contact = Contact.find(params[:contact_id]) %>
+<p>Would you like to <a href="/contacts/<%= contact.id %>">return to <%= contact.name %>'s contact page</a>, or <a href="/contacts/<%= contact.id %>/emails/new">create a new phone number</a>?</p>
