@@ -1,13 +1,8 @@
 == Wikipages
 
-Ruby on Rails-based contact/address book. Stores contacts with email address(es) and phone number(s). As many unique (to the contact) phone numbers and email addresses can be created as the user's heart desires.
+Ruby on Rails-based contact/address book. Stores contacts with email address(es), street address(es), and phone number(s). As many unique (to the contact) phone numbers, street addresses, and email addresses can be created as the user's heart desires (and hardware allows).
 
 Things you may want to cover:
 
-* Mailing address not yet created.
+* Our first Ruby on Rails project.
 
-*Our first Ruby on Rails project.
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.

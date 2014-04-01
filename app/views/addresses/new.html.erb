@@ -1,0 +1,18 @@
+<h1>New address for <%= @address.contact.name %></h1>
+
+<% if @address.errors.any? %>
+  <h3>Please fix these errors:</h3>
+  <ul>
+    <% @address.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<form action="/contacts/<%= @address.contact.id %>/addresses" method="post">
+  <label for="address_address">Address</label>
+  <input id="address_address" name="address" type="text" value="<%= @address.address %>">
+  <label for="address_label"> Label </label>
+  <input id="address_label" name="label" type="text" value="<%= @address.label %>">
+  <button>Add address</button>
+</form>
